@@ -73,8 +73,8 @@ function App() {
   return (
     <>
       {/* <Router> */}
-        <Alert alert={alert} />
         <Navbar title='Navbar' home='Home' mode={mode} toggleMode={toggleDarkMode} themeColor={theme} themeToggle={themeToggle} />
+        <Alert alert={alert} />
         <TextForm heading='Enter Text Below to Analyze' mode={mode} showalert={showAlert} />
         {/* <About /> */}
 
