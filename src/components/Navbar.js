@@ -23,7 +23,7 @@ export default function Navbar(props) {
   return (
     <nav className={`navbar navbar-expand-lg bg-${props.mode}`}>
       <div className="container-fluid">
-        <a className={`navbar-brand text-${props.mode === "light" ? "dark" : "light"}`} href="/">
+        <a className={`navbar-brand text-${props.mode === "light" ? "dark" : "light"}`} href="#">
           {props.title}
         </a>
         <button
@@ -40,55 +40,55 @@ export default function Navbar(props) {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <Link className={`nav-link text-${props.mode === "light" ? "dark" : "light"}`} aria-current="page" to="/">
+              <a className={`nav-link text-${props.mode === "light" ? "dark" : "light"}`} aria-current="page" href="#">
                 {props.home}
-              </Link>
+              </a>
             </li>
             <li className="nav-item">
-              <Link className={`nav-link text-${props.mode === "light" ? "dark" : "light"}`} to="/about">
+              <a className={`nav-link text-${props.mode === "light" ? "dark" : "light"}`} href="#">
                 About
-              </Link>
+              </a>
             </li>
             <li className="nav-item">
-              <Link className={`nav-link text-${props.mode === "light" ? "dark" : "light"}`} to="/contact">
+              <a className={`nav-link text-${props.mode === "light" ? "dark" : "light"}`} href="#">
                 Contact
-              </Link>
+              </a>
             </li>
             <li className="nav-item dropdown">
-              <Link
+              <a
                 className={`nav-link text-${props.mode === "light" ? "dark" : "light"} dropdown-toggle`}
-                to="/"
+                href="#"
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
                 Dropdown
-              </Link>
+              </a>
               <ul className="dropdown-menu">
                 <li>
-                  <Link className="dropdown-item" to="/">
+                  <a className="dropdown-item" href="#">
                     Action
-                  </Link>
+                  </a>
                 </li>
                 <li>
-                  <Link className="dropdown-item" to="/">
+                  <a className="dropdown-item" href="#">
                     Another action
-                  </Link>
+                  </a>
                 </li>
                 <li>
                   <hr className="dropdown-divider" />
                 </li>
                 <li>
-                  <Link className="dropdown-item" to="/">
+                  <a className="dropdown-item" href="#">
                     Something else here
-                  </Link>
+                  </a>
                 </li>
               </ul>
             </li>
             <li className="nav-item">
-              <Link className={`nav-link text-${props.mode === "light" ? "dark" : "light"}`} aria-disabled="true" to="/">
+              <a className={`nav-link text-${props.mode === "light" ? "dark" : "light"}`} aria-disabled="true" href="#">
                 Disabled
-              </Link>
+              </a>
             </li>
           </ul>
           <form className="d-flex justify-content-between w-50" role="search">
