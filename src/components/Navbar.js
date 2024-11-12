@@ -85,11 +85,6 @@ export default function Navbar(props) {
                 </li>
               </ul>
             </li>
-            <li className="nav-item">
-              <a className={`nav-link text-${props.mode === "light" ? "dark" : "light"}`} aria-disabled="true" href="#">
-                Disabled
-              </a>
-            </li>
           </ul>
           <form className="d-flex justify-content-between w-50" role="search">
             <div className="d-flex">
