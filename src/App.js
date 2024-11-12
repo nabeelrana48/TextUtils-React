@@ -73,10 +73,10 @@ function App() {
   return (
     <>
       {/* <Router> */}
+        <Alert alert={alert} />
         <Navbar title='Navbar' home='Home' mode={mode} toggleMode={toggleDarkMode} themeColor={theme} themeToggle={themeToggle} />
         <TextForm heading='Enter Text Below to Analyze' mode={mode} showalert={showAlert} />
         {/* <About /> */}
-        <Alert alert={alert} />
 
           {/* <Switch>
             <Route path="/about">
