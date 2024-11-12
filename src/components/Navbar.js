@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Link } from "react-router-dom/cjs/react-router-dom.min";
+// import { Link } from "react-router-dom/cjs/react-router-dom.min";
 
 export default function Navbar(props) {
 
@@ -90,7 +90,7 @@ export default function Navbar(props) {
               </ul>
             </li>
           </ul>
-          <form className="d-flex justify-content-between w-50" role="search">
+          <form className="d-flex justify-content-between w-50 flex-wrap" role="search">
             <div className="d-flex">
               <input
                 className="form-control me-2 "

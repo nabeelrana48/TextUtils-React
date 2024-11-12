@@ -40,9 +40,7 @@ export default function TextForm(props) {
   }
   
   const handleCopy = () =>{
-    let text = document.getElementById("textBox")
-    text.select();
-    navigator.clipboard.writeText(text.value)
+    navigator.clipboard.writeText(text)
     props.showalert("dark", "Text Copied to Clipboard.")
   }
 
@@ -86,7 +84,7 @@ export default function TextForm(props) {
       <div className="text-center">
         <h4 className={`text-${props.mode === "light" ? "dark" : "light"} mb-1`}>Text Summber</h4>
         <p className={`text-${props.mode === "light" ? "dark" : "light"}`}>
-          "{text.split(" ").length-1} Words and {text.length} Characters"
+          "{text.split(/\s+/).filter((element)=>{return element.length !==0}).length} Words and {text.length} Characters"
         </p>
         <h4 className={`text-${props.mode === "light" ? "dark" : "light"} mb-1`}>Preview</h4>
         <p className={`text-${props.mode === "light" ? "dark" : "light"}`}>{text===""?"Type Something to Preview. ":text}</p>
