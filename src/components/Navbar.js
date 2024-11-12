@@ -6,18 +6,22 @@ export default function Navbar(props) {
 
   const primaryTheme = ()=>{
     props.themeToggle("primary")
+    props.showalert("primary", "Dark Blue Theme Enabled")
   }
-
+  
   const successTheme = ()=>{
     props.themeToggle("success")
+    props.showalert("success", "Dark Green Theme Enabled")
   }
-
+  
   const warningTheme = ()=>{
     props.themeToggle("warning")
+    props.showalert("warning", "Orange Theme Enabled")
   }
-
+  
   const infoTheme = ()=>{
     props.themeToggle("info")
+    props.showalert("info", "Light Blue Theme Enabled")
   }
 
   return (
