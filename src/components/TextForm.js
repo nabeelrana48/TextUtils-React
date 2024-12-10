@@ -82,7 +82,7 @@ export default function TextForm(props) {
         </button>
       </div>
       <div className="text-center">
-        <h4 className={`text-${props.mode === "light" ? "dark" : "light"} mb-1`}>Text Summber</h4>
+        <h4 className={`text-${props.mode === "light" ? "dark" : "light"} mb-1`}>Text Summery</h4>
         <p className={`text-${props.mode === "light" ? "dark" : "light"}`}>
           "{text.split(/\s+/).filter((element)=>{return element.length !==0}).length} Words and {text.length} Characters"
         </p>
